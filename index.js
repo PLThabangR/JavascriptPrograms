@@ -105,3 +105,67 @@ document.getElementById("mybtn4").onclick = function(){
     document.getElementById("y1Label").innerHTML="Y is "+yr ;
     document.getElementById("c1Label").innerHTML="C is "+cr ;
 }
+//String Methods
+
+let fullName="Tha bang";
+let lastName1;
+let firstName1;
+
+lastName1 = fullName.slice(4);
+//slice method
+firstName1 = fullName.slice(0,3);
+
+console.log('Last name',lastName1);
+console.log("First name",firstName1);
+//Method chaining
+ let letter = fullName.charAt(4).toUpperCase();
+
+ console.log("Letter is ",letter);
+
+//If statements
+
+let age1=18;
+
+if(age1>=18){
+    console.log("You are eligible to vote");
+}else if(age1<0){
+    console.log("You are not yet Born");
+}else{
+    console.log("You are not eligible to vote");
+}
+
+//Working with the check box
+
+document.getElementById("mybtn5").onclick = function(){
+    subscribebtn=document.getElementById("myCheckBox");
+    if(subscribebtn.checked){
+        console.log("You have subscribed ");
+    }else{
+        console.log("You have not subscribed ");
+    }
+
+    // radio buttons
+    const visaBtn = document.getElementById("visaBtn");
+    const masterCardBtn = document.getElementById("masterCardBtn");
+    const payPalBtn = document.getElementById("payPalBtn");
+    //Check if the card is selected
+    if(visaBtn.checked){
+        console.log("You have selected Visa");
+    }else if(masterCardBtn.checked){
+        console.log("You have selected Master Card");
+    }else if(payPalBtn.checked){
+        console.log("You have selected PayPal");
+    }else{
+        console.log("You have not selected any payment option");
+    }
+}
+
+//Not operato
+//! typically used to reverse conditions
+let temp =17
+
+if(!(temp>0)){
+    console.log("its cold outside");
+}{
+    console.log("its warm outside");
+}

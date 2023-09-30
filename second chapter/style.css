@@ -3,7 +3,7 @@ body {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #a58b8b;
+    background-color: #949090;
     }
 .hyputunes{
    display: flex;
@@ -13,13 +13,7 @@ body {
    width: fit-content;
    padding: 7px;
 }
-.counter{
-   display:block;
-   text-align: center;
-   font-size:50px ;
-   border-bottom: 2px solid rgb(255, 255, 255); 
-  
-}
+
 .random{
    display: flex;
    flex-direction: column;
@@ -42,15 +36,4 @@ h2{
 box-shadow: 4px 4px 6px;
 margin: 6px;
 padding: 5px;
-}
-.checkBox{
-   background-color: rgb(192, 142, 192);
-   border-style:outset;
-   border-width: 5px;
-  align-items: center;
-   border-radius: 10px;
-   border-color: hsl(180, 48%, 75%);
-   margin: 5px auto;
-   width: fit-content;
-   padding: 5px;
 }
