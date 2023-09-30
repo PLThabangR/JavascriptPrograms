@@ -28,3 +28,6 @@ body {
    border-color: hsl(36, 39%, 68%);
    margin: 5px auto;
 }
+h2{
+   text-shadow: 2px 2px 2px;
+}
