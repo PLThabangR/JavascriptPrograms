@@ -72,3 +72,36 @@ document.getElementById("myButton2").onclick=function(){
 
     document.getElementById("myLabel4").innerHTML ="Side XY is "+ hv;
 }
+
+//Counter program 
+let count =0;
+document.getElementById("mybtn1").onclick=function(){
+    
+    counter=counter-1;
+    document.getElementById("counter").innerHTML=counter;
+}
+document.getElementById("mybtn2").onclick=function(){
+    
+    counter=0;
+    document.getElementById("counter").innerHTML=counter;
+}
+document.getElementById("mybtn3").onclick=function(){
+    
+    counter=counter+1;
+    document.getElementById("counter").innerHTML=counter;
+}
+
+//Random number generator
+let xr;
+let yr;
+let cr;
+ 
+document.getElementById("mybtn4").onclick = function(){
+    xr =randomNumber=Math.floor(Math.random()*20)+1;
+    yr =randomNumber=Math.floor(Math.random()*20)+1;
+    cr= randomNumber=Math.floor(Math.random()*20)+1;
+
+    document.getElementById("x1Label").innerHTML="X is "+xr ;
+    document.getElementById("y1Label").innerHTML="Y is "+yr ;
+    document.getElementById("c1Label").innerHTML="C is "+cr ;
+}

@@ -8,4 +8,16 @@ body {
 .hyputunes{
    display: flex;
    flex-direction: column;
+   background-color: rgb(64, 110, 85);
+}
+.counter{
+   display:block;
+   text-align: center;
+   font-size:50px ;
+
+}
+.random{
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(169, 206, 186);
 }
