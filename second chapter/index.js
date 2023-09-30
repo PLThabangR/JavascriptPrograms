@@ -50,4 +50,25 @@ if(guess== answer){
 
 }
 
+///Array
+let fruits = ["Apple", "Orange", "Mango"];
 
+fruits.push("Watermelon");
+
+for(i=0 ; i<fruits.length;i+=1){
+    console.log(fruits[i]);
+}
+//2D arrays
+let fruitArray =["Apple", "Orange", "Mango"];
+let vegetablesArray =["carrots","Onions","potatoes","tomatoes"];
+let meatArray =["Wors","Staek","Chicken","Mince"];
+
+let foodArray =[fruitArray,vegetablesArray,meatArray];
+
+for(let list of foodArray) {
+    for(let food of list){
+        console.log(food);
+    }
+}
+
+//Spread operators
