@@ -169,3 +169,17 @@ if(!(temp>0)){
 }{
     console.log("its warm outside");
 }
+
+//For loops
+// for(let i=10; i>0;i-=2){
+//     console.log("countdwon ",i)
+// }
+// console.log("Happy new year")
+
+// for(let r=1;r<=20;r+=1){
+//     if(r==13){
+//         continue;
+//     }
+//     console.log(r);
+// }
+

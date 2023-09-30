@@ -37,3 +37,19 @@ box-shadow: 4px 4px 6px;
 margin: 6px;
 padding: 5px;
 }
+
+.guessGame{
+  
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(112, 207, 157);
+      border-style:ridge;
+      border-width: 10px;
+     align-items: center;
+      border-radius: 10px;
+      border-color: hsl(44, 90%, 45%);
+      margin: 5px auto;
+      width: fit-content;
+      padding: 8px;
+   
+}
