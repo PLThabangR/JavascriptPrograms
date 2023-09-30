@@ -31,3 +31,10 @@ body {
 h2{
    text-shadow: 2px 2px 2px;
 }
+.userInputBox{
+   width: fit-content;
+  background-color: rgb(213, 228, 241);
+box-shadow: 4px 4px 6px;
+margin: 6px;
+padding: 5px;
+}
