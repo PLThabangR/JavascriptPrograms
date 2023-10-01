@@ -323,3 +323,20 @@ console.log(_dog.name);
 console.log(_fish.name);
 console.log(_fish.swimSpeed);
 console.log(_dog.runSpeed);
+
+//Error Handling in JAvascript.js
+/* 
+1.Cant open file
+2.Lose Connection
+3.User types incorrect input
+4.Type Error
+5.File not found
+*/
+try{
+    //console.lag("")
+}catch(error){
+console.log(error);
+}finally{
+    //will always execute
+    //Can be used to close files and reset data
+}
