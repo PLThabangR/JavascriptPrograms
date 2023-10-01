@@ -41,7 +41,7 @@ let guess=   document.getElementById("guessInput").value;
 //Keep track of how many guesses we have
 guesses+=1;
 if(guess== answer){
-    alert(`${answer} is the #, It took you ${guess} guesses.`);
+    alert(`${answer} is the #, It took you ${guesses} guesses.`);
 }else if(guess< answer){
     alert("Too low");
 }else {
@@ -163,8 +163,163 @@ grades.sort((a,b)=>{
 });
 
 
+
 for(let grade of grades){
     console.log("Descending Order let ",grade);
 }
 
-//Anonymous dunction ,functions without names
+// Maps Object that holds key-value pairs of any data type
+
+const store = new Map([
+    ["T-shirt",40],
+    ["Jeans",40],
+    ["UnderWare",40],
+])
+
+//Objects is a instance of a class
+
+const car ={
+    //Properties
+    model:"Mustang",
+    color:"red",
+    year:2020,
+
+    //Methods
+   drive: function(){
+       console.log("You are now driving")
+    },
+    brake : function(){
+        console.log("You astep on the brakes");
+    },
+}
+
+car.drive();
+
+//This is a reference to a particular object
+//class is a blue print of a class
+//Constructor a special method of a class accept arguments and assign properties
+
+class Student{
+
+    constructor(name,age,results){
+        this.name=name;
+        this.age=age;
+        this.results=results;
+    }
+
+    study(){
+        console.log(`${this.name} is studying`);  
+    }
+
+  results(){
+    console.log(`${this.name} has ${this.results} results`);
+  }
+}
+
+///create Objects
+const student1 = new Student("Spongebob",30,65)
+console.log(student1.name)
+
+//Static cllass belong to the class not object members
+//The Math.random() function is a static function
+
+class Car{
+    static numberOfCars=0;
+
+    constructor(model){
+        this.model=model;
+        //Static member belong to the class not object members
+        Car.numberOfCars+=1;
+    }
+    static displayCars(){
+        console.log("Number of cars",Car.numberOfCars);
+    }
+    static statrtRace(){
+        console.log("3....2....1...Go!!!")
+    }
+}
+
+const car1 = new Car("Mustang");
+const car2 = new Car("Benz");
+const car3 = new Car("Porche");
+const car4 = new Car("Toyota");
+const car5 = new Car("Honda");
+console.log("Number of Cars ",Car.numberOfCars);
+
+Car.displayCars();
+Car.statrtRace();
+
+//Inheritance is when a child class can inherit all propertes from another class especially from parent
+//Helps to reduce repeatition of code
+
+class Animal{
+    alive=true;
+    eat(){
+        console.log(`This ${this.name} is eating`);
+    }
+    sleep(){
+        console.log(`This ${this.name} is sleeping`);
+    }
+
+}
+//Children Classes exttends from the parents
+class Dog extends Animal{
+    name="dog";
+
+    bark(){
+        console.log(`This ${this.name} is barking`);
+    }
+}
+
+class Fish extends Animal{
+    name="fish";
+
+    swim(){
+        console.log(`This ${this.name} is swimming`);
+    }
+}
+
+const dog1 = new Dog();
+const fish1 = new Fish()
+dog1.eat();
+fish1.eat();
+
+//Super Refer to the parennt class
+//Commonly used to invoke the constructor of a parent class
+class _Animal{
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+    }
+   
+}
+
+class _Dog extends _Animal{
+    name="dog";
+
+    constructor(name,age,runSpeed){
+        super(name,age);
+        this.runSpeed=runSpeed;
+       
+    }
+   
+}
+
+class _Fish extends _Animal{
+    name="fish";
+    constructor(name,age,swimSpeed){
+        super(name,age,swimSpeed);
+        this.swimSpeed= swimSpeed;
+       
+    }
+
+  
+}
+
+const _dog = new _Dog("dog2",1,10);
+const _fish = new _Fish("fish",2,3);
+
+console.log(_dog.name);
+console.log(_fish.name);
+console.log(_fish.swimSpeed);
+console.log(_dog.runSpeed);
