@@ -340,3 +340,64 @@ console.log(error);
     //will always execute
     //Can be used to close files and reset data
 }
+//********************************************* */
+//SeTimeOut = envokes a function after a number of seconds
+//is a asyncronous function (It doesnt pause)
+const timer1=setTimeout(firstMessage,2000)
+function firstMessage(){
+    console.log(`Buy this course for $500`)
+}
+function secondMessage(){
+    console.log(`This is not a Scam`)
+}
+function thirdMessage(){
+    console.log(`Do it!!!`)
+}
+
+function timeOut(){
+    clearTimeout(timer1);
+   
+}
+//******************************************* */
+//SetInterval  envokes a function after a number of milliseconds
+//is a asyncronous function (It doesnt pause)
+let count = 0;
+let max=10;
+
+const timer2=setInterval( ()=>{
+    count+=1;
+    console.log(count);
+    if(max>=10){
+        clearInterval(timer2)
+    }
+},1000);
+
+//Date objects are used to work with times
+let date = new Date
+console.log(date)
+//*************************************************** */
+//Sycnhronous code ->In an ordered sequence (start now finish now);
+//Asynchronous code -> Out of sequence e.g Access DB ,fetch file,Task that takes time (Start now finish sometime later)
+
+setTimeout(()=> {
+    console.log("This is asynchronous")
+},2000)
+//***************************************************** */
+// promise = object that encapsulates the result of an asynchronous operation
+//                   let asynchronous methods return values like synchronous methods
+//                   "I promise to return something in the future"
+
+//Aysnc makes a function return a promise
+//Await make function wait for a promise
+
+const loadFile = async ()=>{
+let fileLoad=true;
+
+if(fileLoad){
+  console.log("File loaded ")
+}else{
+      console.log("Falied to load")
+}
+}
+
+loadFile()
